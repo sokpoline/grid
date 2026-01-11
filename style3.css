@@ -1,0 +1,35 @@
+.parent{
+    width: 700px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 100px 500px 100px;
+    grid-template-rows: 100px 500px 100px;
+    grid-template-areas: 
+    "header header header"
+    "nav article ads"
+
+    "nav footer footer";
+}
+.child{
+    border: 1px white solid;
+    background-color: yellow;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.child1{
+    grid-area: header;
+}
+.child2{
+    grid-area: nav;
+}
+.child3{
+    grid-area: article;
+}
+.child4{
+    grid-area: ads;
+}
+.child5{
+    grid-area: footer;
+}
